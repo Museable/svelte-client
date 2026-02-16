@@ -1,1 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
 @import 'tailwindcss';
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+
+.app {
+display: grid;
+grid-template-columns: 400px 3fr 400px;
+grid-template-rows: 51px 1fr 130px;
+grid-column-gap: 0px;
+grid-row-gap: 0px;
+
+height: 100vh;
+width: 100vw;
+}
+
+.container-informations { grid-area: 3 / 1 / 4 / 2; }
+.container-controls { grid-area: 3 / 2 / 4 / 3; }
+.container-actions { grid-area: 3 / 3 / 4 / 4; }
+.container-navigation { grid-area: 1 / 1 / 2 / 4; }
+.container-view { grid-area: 2 / 1 / 3 / 4; }
+
+.container{
+  display:flex;
+  height: 100%;
+  width: 100%;
+}
+
+.box-view{
+  width: 100%;
+
+  margin:5px;
+
+  background-color: #324C3731;
+
+  border-radius: 25px;
+
+  position: relative;
+
+  border: 1px solid #34523A;
+}
+
+* {
+  font-family: "Quicksand";
+  font-weight: bold
+}
